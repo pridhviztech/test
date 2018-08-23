@@ -6,6 +6,11 @@ def testing_pods
     pod 'Nimble'
 end
 
+target 'TruthOrDare' do
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
 target 'TruthOrDareTests' do
     testing_pods
 end

@@ -15,6 +15,7 @@
 		AB654D87212D686800080E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D85212D686800080E76 /* LaunchScreen.storyboard */; };
 		AB654D95212DA86400080E76 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D94212DA86400080E76 /* ViewModelTests.swift */; };
 		AB654D9D212DAA3E00080E76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D9C212DAA3E00080E76 /* ViewModel.swift */; };
+		C882053169BBA28A74BD97B9 /* Pods_TruthOrDare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8999943CF96844871D857A /* Pods_TruthOrDare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,9 @@
 
 /* Begin PBXFileReference section */
 		04154D753C8EB9AA39C4094E /* Pods-TruthOrDareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F8999943CF96844871D857A /* Pods_TruthOrDare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruthOrDare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C0017614C22CC39ED85464 /* Pods_TruthOrDareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruthOrDareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.release.xcconfig"; sourceTree = "<group>"; };
 		AB654D79212D686700080E76 /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB654D7C212D686700080E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB654D7E212D686700080E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		AB654D94212DA86400080E76 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		AB654D96212DA86400080E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB654D9C212DAA3E00080E76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.debug.xcconfig"; sourceTree = "<group>"; };
 		F39FA433E2A4108B41062A4E /* Pods-TruthOrDareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C882053169BBA28A74BD97B9 /* Pods_TruthOrDare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				14C0017614C22CC39ED85464 /* Pods_TruthOrDareTests.framework */,
+				0F8999943CF96844871D857A /* Pods_TruthOrDare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +125,8 @@
 			children = (
 				F39FA433E2A4108B41062A4E /* Pods-TruthOrDareTests.debug.xcconfig */,
 				04154D753C8EB9AA39C4094E /* Pods-TruthOrDareTests.release.xcconfig */,
+				AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */,
+				7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB654D8B212D686900080E76 /* Build configuration list for PBXNativeTarget "TruthOrDare" */;
 			buildPhases = (
+				F8B36A9CAA4450629657A5F4 /* [CP] Check Pods Manifest.lock */,
 				AB654D75212D686700080E76 /* Sources */,
 				AB654D76212D686700080E76 /* Frameworks */,
 				AB654D77212D686700080E76 /* Resources */,
+				AB5378CF212F20D800644C2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -258,6 +268,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5378CF212F20D800644C2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ccecd894afb473edc8152a03eea12a134cb9e970 4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e";
+		};
+		F8B36A9CAA4450629657A5F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruthOrDare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -427,17 +468,18 @@
 		};
 		AB654D8C212D686900080E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6XCN543G7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.TruthOrDare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jenkins.TruthOrDare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -448,19 +490,21 @@
 		};
 		AB654D8D212D686900080E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B6XCN543G7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QHX8326X9Q;
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.TruthOrDare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jenkins.TruthOrDare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "83decf74-0431-435d-8837-d934bbf8f0ad";
+				PROVISIONING_PROFILE_SPECIFIER = "Truth Or Dare";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
