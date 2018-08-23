@@ -10,7 +10,7 @@ import Foundation
 
 class ViewModel {
     
-    //Truth
+    //Truths
     private let truths = [
         "What are you most self-conscious about?",
         "What would you do if you were the opposite sex for a month?",
@@ -19,7 +19,7 @@ class ViewModel {
         "Have you ever let someone take the blame for something you did?"
     ]
     
-    //Dare
+    //Dares
     private let dares = [
         "For a guy, put on makeup. For a girl, wash off your make up.",
         "Dance with no music for 1 minute.",
