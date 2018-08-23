@@ -38,7 +38,5 @@ platform :ios do
                   notes: 'Distributed with fastlane', # Check out the changelog_from_git_commits action
           notifications: true) # Should this distribution notify your testers via email?
 
-  increment_build_number(build_number: values[:build_number])
-
   end
 end
