@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36E42A841098992EBAD77937 /* Pods_TruthOrDareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C0017614C22CC39ED85464 /* Pods_TruthOrDareTests.framework */; };
 		AB654D7D212D686700080E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7C212D686700080E76 /* AppDelegate.swift */; };
 		AB654D7F212D686700080E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D7E212D686700080E76 /* ViewController.swift */; };
 		AB654D82212D686700080E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D80212D686700080E76 /* Main.storyboard */; };
@@ -15,6 +14,10 @@
 		AB654D87212D686800080E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB654D85212D686800080E76 /* LaunchScreen.storyboard */; };
 		AB654D95212DA86400080E76 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D94212DA86400080E76 /* ViewModelTests.swift */; };
 		AB654D9D212DAA3E00080E76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB654D9C212DAA3E00080E76 /* ViewModel.swift */; };
+		ABAF8A6121303418001DA576 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAF8A5D21303418001DA576 /* Crashlytics.framework */; };
+		ABAF8A6221303418001DA576 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAF8A5E21303418001DA576 /* Fabric.framework */; };
+		ABAF8A6F2130372C001DA576 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAF8A6D2130372C001DA576 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ABAF8A702130372C001DA576 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABAF8A6E2130372C001DA576 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +30,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ABAF8A6C2130371B001DA576 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ABAF8A6F2130372C001DA576 /* Nimble.framework in CopyFiles */,
+				ABAF8A702130372C001DA576 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		04154D753C8EB9AA39C4094E /* Pods-TruthOrDareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests.release.xcconfig"; sourceTree = "<group>"; };
-		0F8999943CF96844871D857A /* Pods_TruthOrDare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruthOrDare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14C0017614C22CC39ED85464 /* Pods_TruthOrDareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TruthOrDareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.release.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.release.xcconfig"; sourceTree = "<group>"; };
 		AB654D79212D686700080E76 /* TruthOrDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthOrDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB654D7C212D686700080E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB654D7E212D686700080E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,8 +56,10 @@
 		AB654D94212DA86400080E76 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		AB654D96212DA86400080E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB654D9C212DAA3E00080E76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDare/Pods-TruthOrDare.debug.xcconfig"; sourceTree = "<group>"; };
-		F39FA433E2A4108B41062A4E /* Pods-TruthOrDareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruthOrDareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABAF8A5D21303418001DA576 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Carthage/Build/iOS/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		ABAF8A5E21303418001DA576 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Carthage/Build/iOS/Fabric.framework; sourceTree = SOURCE_ROOT; };
+		ABAF8A6D2130372C001DA576 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		ABAF8A6E2130372C001DA576 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAF8A6121303418001DA576 /* Crashlytics.framework in Frameworks */,
+				ABAF8A6221303418001DA576 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,30 +76,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36E42A841098992EBAD77937 /* Pods_TruthOrDareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31C63447C597078417F310E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				14C0017614C22CC39ED85464 /* Pods_TruthOrDareTests.framework */,
-				0F8999943CF96844871D857A /* Pods_TruthOrDare.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AB654D70212D686700080E76 = {
 			isa = PBXGroup;
 			children = (
+				ABAF8A6D2130372C001DA576 /* Nimble.framework */,
+				ABAF8A6E2130372C001DA576 /* Quick.framework */,
 				AB654D7B212D686700080E76 /* TruthOrDare */,
 				AB654D93212DA86400080E76 /* TruthOrDareTests */,
+				ABAF8A5B21303403001DA576 /* Frameworks */,
 				AB654D7A212D686700080E76 /* Products */,
-				B4AB3ECDCCF9064D8A1ACCA8 /* Pods */,
-				31C63447C597078417F310E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,15 +126,13 @@
 			path = TruthOrDareTests;
 			sourceTree = "<group>";
 		};
-		B4AB3ECDCCF9064D8A1ACCA8 /* Pods */ = {
+		ABAF8A5B21303403001DA576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F39FA433E2A4108B41062A4E /* Pods-TruthOrDareTests.debug.xcconfig */,
-				04154D753C8EB9AA39C4094E /* Pods-TruthOrDareTests.release.xcconfig */,
-				AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */,
-				7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */,
+				ABAF8A5D21303418001DA576 /* Crashlytics.framework */,
+				ABAF8A5E21303418001DA576 /* Fabric.framework */,
 			);
-			name = Pods;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,11 +142,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB654D8B212D686900080E76 /* Build configuration list for PBXNativeTarget "TruthOrDare" */;
 			buildPhases = (
-				F8B36A9CAA4450629657A5F4 /* [CP] Check Pods Manifest.lock */,
 				AB654D75212D686700080E76 /* Sources */,
 				AB654D76212D686700080E76 /* Frameworks */,
 				AB654D77212D686700080E76 /* Resources */,
-				AB5378CF212F20D800644C2C /* ShellScript */,
+				ABAF8A662130348E001DA576 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,11 +160,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB654D99212DA86400080E76 /* Build configuration list for PBXNativeTarget "TruthOrDareTests" */;
 			buildPhases = (
-				2B5A1436F3BE5E498F40E404 /* [CP] Check Pods Manifest.lock */,
 				AB654D8E212DA86400080E76 /* Sources */,
 				AB654D8F212DA86400080E76 /* Frameworks */,
 				AB654D90212DA86400080E76 /* Resources */,
-				396C02FD55B0B177EAE4D3CB /* [CP] Embed Pods Frameworks */,
+				ABAF8A6C2130371B001DA576 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -230,45 +234,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B5A1436F3BE5E498F40E404 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TruthOrDareTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		396C02FD55B0B177EAE4D3CB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TruthOrDareTests/Pods-TruthOrDareTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB5378CF212F20D800644C2C /* ShellScript */ = {
+		ABAF8A662130348E001DA576 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,25 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" ccecd894afb473edc8152a03eea12a134cb9e970 4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e";
-		};
-		F8B36A9CAA4450629657A5F4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TruthOrDare-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PROJECT_DIR}/Carthage/Build/iOS/Fabric.framework/run\" ccecd894afb473edc8152a03eea12a134cb9e970 4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -466,12 +414,15 @@
 		};
 		AB654D8C212D686900080E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD8E339E25DA8BDE9E1B9C52 /* Pods-TruthOrDare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,12 +439,15 @@
 		};
 		AB654D8D212D686900080E76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A71C91240A31834F821DC06 /* Pods-TruthOrDare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QHX8326X9Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TruthOrDare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,11 +464,14 @@
 		};
 		AB654D9A212DA86400080E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39FA433E2A4108B41062A4E /* Pods-TruthOrDareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TruthOrDareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,11 +488,14 @@
 		};
 		AB654D9B212DA86400080E76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04154D753C8EB9AA39C4094E /* Pods-TruthOrDareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U4MH93EC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TruthOrDareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

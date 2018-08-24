@@ -18,25 +18,24 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :CI do
-	  run_tests(workspace: "TruthOrDare.xcworkspace",
+	  run_tests(workspace: "TruthOrDare.xcodeproj",
 	        devices: ["iPhone 6s"],
 	        scheme: "TruthOrDareTests")
   end
 
   lane :CD do |values|
-  # Fabric generated this lane for deployment to Crashlytics Beta
-  # set 'export_method' to 'ad-hoc' if your Crashlytics Beta distribution uses ad-hoc provisioning
-  gym(scheme: 'TruthOrDare', workspace: "TruthOrDare.xcworkspace", export_method: 'ad-hoc')
 
-  emails = values[:test_email] ? values[:test_email] : ['lawtjh@gmail.com', 'guy@swish.gifts', 'laura@swish.gifts'] # You can list more emails here
-  groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
+    gym(scheme: 'TruthOrDare', workspace: "TruthOrDare.xcodeproj", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
 
-  crashlytics(api_token: 'ccecd894afb473edc8152a03eea12a134cb9e970',
-           build_secret: '4094f91a9ae4c861e895e9a7864c533e471ca4a85ec8ba6ea45082a6bc16422e',
-                 emails: emails,
-                 groups: groups,
-                  notes: 'Distributed with fastlane', # Check out the changelog_from_git_commits action
-          notifications: true) # Should this distribution notify your testers via email?
+    emails = values[:test_email] ? values[:test_email] : ['lawtjh@gmail.com'] # You can list more emails here
+    groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
 
-  end
+    crashlytics(api_token: 'ccecd894afb473edc8152a03eea12a134cb9e970',
+             build_secret: '35e78b9d161e0ce76eefaaa3a56424f28f5dba42ba432fde18662be8ac3f4375',
+                   emails: emails,
+                   groups: groups,
+                    notes: 'Distributed with fastlane', # Check out the changelog_from_git_commits action
+            notifications: true) # Should this distribution notify your testers via email?
+
+    end
 end
