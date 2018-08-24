@@ -20,7 +20,7 @@ platform :ios do
   lane :CI do
 	  run_tests(project: "TruthOrDare.xcodeproj",
       devices: ["iPhone 6s"],
-      scheme: "TruthOrDareTests")
+      scheme: "TruthOrDare")
   end
 
   lane :CD do |values|
