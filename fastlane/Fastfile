@@ -18,14 +18,16 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :CI do
-	  run_tests(workspace: "TruthOrDare.xcodeproj",
-	        devices: ["iPhone 6s"],
-	        scheme: "TruthOrDareTests")
+	  run_tests
+    (
+      devices: ["iPhone 6s"],
+	    scheme: "TruthOrDareTests"
+    )
   end
 
   lane :CD do |values|
 
-    gym(scheme: 'TruthOrDare', workspace: "TruthOrDare.xcodeproj", clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
+    gym(scheme: 'TruthOrDare', clean: true, silent: true, include_bitcode: false, export_method: 'ad-hoc')
 
     emails = values[:test_email] ? values[:test_email] : ['lawtjh@gmail.com'] # You can list more emails here
     groups = values[:test_email] ? nil : nil # You can define groups on the web and reference them here
