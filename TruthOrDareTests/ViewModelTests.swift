@@ -41,7 +41,7 @@ class ViewModelTests: QuickSpec {
                     expect(viewModel.getDare(for: 1)).to(equal("Dance with no music for 1 minute."))
                     expect(viewModel.getDare(for: 2)).to(equal("Try to drink a glass water while standing on your hands."))
                     expect(viewModel.getDare(for: 3)).to(equal("Let the group pose you in an embarrassing position and take a picture."))
-                    expect(viewModel.getDare(for: 4)).to(equal("Let the group pose you in an embarrassing position and take a picture."))
+                    expect(viewModel.getDare(for: 4)).to(equal("Curse like sailor for 20 seconds straight."))
                 }
             }
         }

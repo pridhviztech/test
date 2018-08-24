@@ -25,7 +25,7 @@ class ViewModel {
         "Dance with no music for 1 minute.",
         "Try to drink a glass water while standing on your hands.",
         "Let the group pose you in an embarrassing position and take a picture.",
-        "Let the group pose you in an embarrassing position and take a picture."
+        "Curse like sailor for 20 seconds straight."
     ]
     
     var totalTruths: Int { return truths.count }
