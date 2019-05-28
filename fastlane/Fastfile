@@ -18,6 +18,10 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
+    cert(
+      development: true,
+      username: "pmuthuraju@ztech.io"
+    )
     match(app_identifier: "com.pridfastlane.test.app1", username: "pmuthuraju@ztech.io")
     build_app(scheme: "test")
   end
