@@ -18,6 +18,9 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :release do
+    before_all do
+      ENV["FASTLANE_PASSWORD"] = "Prithuapple5262"
+    end
     cert(
       development: true,
       username: "pmuthuraju@ztech.io",
