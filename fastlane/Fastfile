@@ -20,7 +20,8 @@ platform :ios do
   lane :release do
     cert(
       development: true,
-      username: "pmuthuraju@ztech.io"
+      username: "pmuthuraju@ztech.io",
+      keychain_password: "soaadmin"
     )
     match(app_identifier: "com.pridfastlane.test.app1", username: "pmuthuraju@ztech.io")
     build_app(scheme: "test")
